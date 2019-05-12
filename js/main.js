@@ -10,7 +10,7 @@ document.getElementById('open').onclick = function(){
 }
 document.getElementById('close').onclick = function(){
     this.style.transition = '0s';
-    menu.style.transform = 'translateX(-100%) rotate(-180deg)';
+    menu.style.transform = 'translateX(-200%) rotate(-180deg)';
     block.style.opacity = '0';
     open.style.opacity = '1';
 }
