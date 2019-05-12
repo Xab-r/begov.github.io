@@ -34,7 +34,7 @@ p {
     justify-content: center;
     align-items: center;
     z-index: 2;
-    transform: translateX(-100%) rotate(-180deg);
+    transform: translateX(-200%) rotate(-180deg);
     transition: transform .5s;
 }
 #close {
@@ -63,6 +63,6 @@ p {
 }
 @media screen and (max-width: 699px) {
     #menu h1, .block h1 {
-        font-size: 60px;
+        font-size: 40px;
     }
 }
