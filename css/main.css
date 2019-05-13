@@ -58,3 +58,13 @@ p {
         text-shadow: 2.5px -2.5px 0 #0ff, -2.5px 2.5px 0 #f00;
     }
 }
+@media screen and (max-width: 699px) {
+    h1 {
+        font-size: 45px;
+    }
+}
+@media screen and (max-width: 299px) {
+    h1 {
+        font-size: 25px;
+    }
+}
