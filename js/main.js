@@ -12,3 +12,4 @@ closeP.onclick = function(){
     openP.style.opacity = '1';
     closeP.style.opacity = '0';
 }
+alert
