@@ -32,7 +32,7 @@ a {
     align-items: center;
     background: #000;
     z-index: 1;
-    transform: translate(-100%);
+    transform: translate(-100%) rotate(-180deg);;
     transition: transform 0.5s;
 }
 #menu h1{
