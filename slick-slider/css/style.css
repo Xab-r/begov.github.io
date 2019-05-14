@@ -1,0 +1,78 @@
+body {
+  background: #ccc;
+}
+.slider {
+  margin-top: 10rem;
+  padding: 2rem;
+  background: #fff;
+}
+.slider * {
+  outline: 0;
+}
+.slider-block .fotorama__nav__shaft {
+  margin-top: 20px;
+}
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  width: 3rem;
+  height: 5rem;
+  overflow: hidden;
+  background: green;
+}
+.prev img,
+.next img {
+  width: 50%;
+}
+.next {
+  left: -3rem;
+  -webkit-transform: rotate(-180deg) translateY(50%);
+          transform: rotate(-180deg) translateY(50%);
+}
+.prev {
+  right: -3rem;
+}
+@media screen and (max-width: 991px) {
+  .block-text {
+    margin-top: 2rem;
+  }
+  .slider-block {
+    text-align: center;
+  }
+  .slider-block .fotorama {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .slider-block {
+    text-align: center;
+  }
+  .slider-block .fotorama {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1198px) {
+  .slider-block .block-text {
+    margin-top: 2.2rem;
+  }
+}
+@media screen and (max-width: 699px) {
+  .slider {
+    margin: 0 1.5rem;
+  }
+  .prev,
+  .next {
+    width: 2rem;
+    height: 2rem;
+  }
+  .next {
+    left: -2rem;
+  }
+  .prev {
+    right: -2rem;
+  }
+}
