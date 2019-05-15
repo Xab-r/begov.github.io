@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <title>Begov</title>
+  </head>
+  
+  <body>
+    
+    <header>
+      <div class="block">
+        Открыть модальное окно
+      </div>
+    </header>
+    
+    <div class="popup">
+      <div class="popup-bg">
+        <div class="popup-content">
+          <p class="close">&times;</p>
+          <h1>Окно открыто!</h1>
+          <p>Это и есть, то самое <br>модальное окно.</p>
+        </div>
+      </div>
+    </div>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+    
+    <script>
+      
+      $(document).ready(function(){
+        $('.block').on('click', function(e){
+          event.preventDefault();
+          $('.popup').fadeIn();
+          $('.popup').css('display', 'flex');
+        });
+        $('.close').on('click', function(e){
+          event.preventDefault();
+          $('.popup').fadeOut();
+        });
+      });
+      
+    </script>
+    
+  </body>
+  
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
