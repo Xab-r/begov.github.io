@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.5s;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+header {
+  background: url(../img/bg.jpg) no-repeat center top / cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heading {
+  width: 75%;
+  height: 15vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading .vk {
+  color: #fff;
+  font-size: 20px;
+  display: block;
+  padding: 10px 25px;
+  border: 2px solid #fff;
+  border-radius: 100px;
+}
+.heading .vk:hover {
+  background: #9172e8;
+  border: 2px solid #9172e8;
+}
+.logo img,
+.logo p {
+  display: inline-block;
+  vertical-align: middle;
+}
+.logo p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .2em;
+}
+.logo p {
+  margin-left: 10px;
+}
+.title {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.title span {
+  text-transform: uppercase;
+}
+.title span::after {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  background: #fff;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.title span::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  background: #fff;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.title h1 {
+  font-size: 86px;
+  margin: 15px 0;
+}
+.title p {
+  font-size: 16px;
+}
+.arrow {
+  width: 64px;
+  height: 64px;
+  box-shadow: 0 0 19px 2px rgba(204, 204, 223, 0.5);
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 45px;
+  cursor: pointer;
+}
+.plan {
+  padding: 120px 0;
+  background: #f1f1f1;
+}
+.plan .titles {
+  text-align: center;
+}
+.plan .titles span {
+  color: #9fa4af;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.plan .titles h1 {
+  color: #4f4f6f;
+  font-size: 60px;
+  margin: 15px 0;
+}
+.plan .titles p {
+  color: #9fa4af;
+  font-size: 16px;
+}
+.plan .titles span::after {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  background: #9172e8;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.plan .titles span::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 1px;
+  background: #9172e8;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.plan .cards {
+  margin-top: 100px;
+}
+.card {
+  text-align: center;
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid #dbdee6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 20px;
+  margin: 0 50px;
+}
+.card .block-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card h4 {
+  color: #9fa4af;
+  font-family: "Maven Pro";
+  font-size: 16px;
+  margin: 40px 0;
+}
+.card span {
+  color: #4f4f6f;
+  font-family: "Maven Pro";
+  font-size: 20px;
+  font-weight: bold;
+}
+.card p {
+  color: #9fa4af;
+  font-family: "Maven Pro";
+  font-size: 16px;
+  margin: 40px 0;
+}
+.card a {
+  display: block;
+  width: 140px;
+  height: 40px;
+  border-radius: 25px;
+  border: 2px solid #dbdee6;
+  color: #9fa4af;
+  text-align: center;
+  line-height: 40px;
+  margin: 0 auto;
+}
+.card:hover {
+  box-shadow: 0 0 82px 10px rgba(204, 204, 223, 0.71);
+}
+.card a:hover {
+  background-color: #6e45e2;
+  border: 2px solid #6e45e2;
+  color: #fff;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+.btn-arrow {
+  width: 40px;
+  height: 50px;
+  background: transparent;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  z-index: 99;
+}
+.next {
+  left: -2rem;
+}
+.prev {
+  right: -2rem;
+}
+.map {
+  background: url(../img/background.jpg) no-repeat center / cover;
+}
+.titles__item {
+  padding: 190px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.titles__item a {
+  width: 160px;
+  height: 40px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 40px;
+  color: rgb(95, 95, 95);
+  border-radius: 25px;
+  background: #fff;
+  margin-top: 40px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.titles__item a:hover {
+  background: #9172e8;
+  color: #fff;
+}
+footer .heading .logo p {
+  color: #000;
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  padding: 20px 0;
+}
+@media screen and (max-width: 599px) {
+  .heading {
+    margin-top: 20px;
+    height: 10vh;
+    flex-direction: column;
+  }
+  .logo p {
+    font-size: 16px;
+    letter-spacing:0.1em; 
+  }
+  .heading .vk {
+    padding: 5px 15px;
+  }
+  .title span{
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  .title h1 {
+    font-size: 50px;
+  }
+  .btn-arrow {
+    width: 10px;
+    height: 20px;
+  }
+  .prev {
+    right: -1rem;
+  }
+  .next {
+    left: -1rem;
+  }
+  .card {
+    padding: 40px 20px;
+    margin: 0 10px;
+  }
+}

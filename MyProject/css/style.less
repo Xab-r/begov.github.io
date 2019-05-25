@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+      text-decoration: none;
+  }
+  button {
+    border: none;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  header {
+    background: url(../img/bg.jpg) no-repeat center top / cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .heading {
+      width: 75%;
+      height: 15vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .vk {
+          color: #fff;
+          font-size: 20px;
+          display: block;
+          padding: 10px 25px;
+          border: 2px solid #fff;
+          border-radius: 100px;
+      }
+  }
+  .logo {
+    img, p {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    & p {
+        color: #fff;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .2em;
+    }
+  }
+  .logo p {
+    margin-left: 10px;
+  }
+  .title {
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 40px;
+      & span {
+        text-transform: uppercase;
+      }
+      & span::after {
+          content: '';
+          display: inline-block;
+          width: 25px;
+          height: 1px;
+          background: #fff;
+          vertical-align: middle;
+          margin-left: 10px;
+      }
+      & span::before {
+        content: '';
+        display: inline-block;
+        width: 25px;
+        height: 1px;
+        background: #fff;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+      & h1 {
+        font-size: 86px;
+        margin: 15px 0;
+      }
+      & p {
+        font-size: 16px;
+      }
+  }
+  .arrow {
+    width: 64px;
+    height: 64px;
+    box-shadow: 0 0 19px 2px rgba(204, 204, 223, 0.5);
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    cursor: pointer;
+  }
+  .plan {
+    padding: 120px 0;
+    background: #f1f1f1;
+    .titles {
+        text-align: center;
+        span {
+            color: #9fa4af;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        h1 {
+            color: #4f4f6f;
+            font-size: 60px;
+            margin: 15px 0;
+        }
+        p {
+            color: #9fa4af;
+            font-size: 16px;
+        }
+        span::after {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 1px;
+            background: #9172e8;
+            vertical-align: middle;
+            margin-left: 10px;
+          }
+          span::before {
+              content: '';
+              display: inline-block;
+              width: 25px;
+              height: 1px;
+              background: #9172e8;
+              vertical-align: middle;
+              margin-right: 10px;
+            }
+        }
+        .cards {
+          margin-top: 100px;
+        }
+    }
+    .card {
+      text-align: center;
+      background: #fff;
+      border-radius: 30px;
+      border: 1px solid #dbdee6;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 60px 20px;
+      margin: 0 50px;
+      .block-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+        h4 {
+            color: #9fa4af;
+            font-family: "Maven Pro";
+            font-size: 16px;
+            margin: 40px 0;
+        }
+        span {
+            color: #4f4f6f;
+            font-family: "Maven Pro";
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p {
+            color: #9fa4af;
+            font-family: "Maven Pro";
+            font-size: 16px;
+            margin: 40px 0;
+        }
+        a {
+            display: block;
+            width: 140px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: #6e45e2;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            margin: 0 auto;
+        }
+    }
+    .container {
+      width: 75%;
+      margin: 0 auto;
+    }
+    .btn-arrow {
+      width: 40px;
+      height: 50px;
+      background: transparent;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      z-index: 99;
+    }
+  .next {
+    left: -2rem;
+  }
+  .prev {
+    right: -2rem;
+  }
+  @media screen and (max-width: 599px) {
+    .logo p {
+      font-size: 20px;
+    }
+  }
