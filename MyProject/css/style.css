@@ -23,7 +23,7 @@ header {
 }
 .heading {
   width: 75%;
-  height: 15vh;
+  height: 20vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
