@@ -23,11 +23,12 @@ header {
 }
 .heading {
   width: 75%;
-  height: 20vh;
+  height: 15vh;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20xp;
 }
 .heading .vk {
   color: #fff;
