@@ -28,7 +28,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20xp;
 }
 .heading .vk {
   color: #fff;
@@ -37,6 +36,7 @@ header {
   padding: 10px 25px;
   border: 2px solid #fff;
   border-radius: 100px;
+  margin-top: 20xp;
 }
 .heading .vk:hover {
   background: #9172e8;
