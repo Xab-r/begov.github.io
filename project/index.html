@@ -2,87 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Document</title>
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <script src="js/main.js" defer></script>
+  <script src="main.js" defer></script>
 </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="heading">
-          <div class="logo">
-            <img src="img/logo.png" alt="Logo">
-          </div>
-          <div class="vk-ico">
-            <img src="img/vk-com.png" alt="Vk">
-          </div>
-        </div>
-        <div class="title">
-        <div class="titles">
-          <h1>Сообщество социального продвижения</h1>
-          <p>Наше сообщество предоставляет возможность <br> продвигать (группу, сайт, канал и т.д) по самым <br> низким ценам.</p>
-          <button>Подробнее</button>
-        </div>
-        <div class="ico">
-          <img src="img/ico.png" alt="ico">
-        </div>
-      </div>
-      </div>
-    </header>
-    <section>
-      <div class="container">
-        <div class="block-object">
-          <div class="object">
-            <img src="img/SmartObject.png" alt="object">
-          </div>
-          <div class="block-text">
-            <h2>Закажите продвижение у нас.</h2>
-            <p>Мы предоставляем инструмент для пиара и продвижения в интернете. Продвигайте группы в социальных сетях, видео на youtube, поднимайте репутацию в интернете с помощью комментариев и отзывов. </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-slider">
-      <div class="container">
-        <div class="slider">
-          <div class="slider-text">
-            <h1>Комментарии, отзывы, наполнение форумов</h1>
-            <p>Фиксированные тарифы от 1 рубля</p>
-            <button>Подробнее</button>
-          </div>
-          <div class="slider-text">
-            <h1>Комментарии, отзывы, наполнение форумов</h1>
-            <p>Фиксированные тарифы от 1 рубля</p>
-            <button>Подробнее</button>
-          </div>
-          <div class="slider-text">
-            <h1>Комментарии, отзывы, наполнение форумов</h1>
-            <p>Фиксированные тарифы от 1 рубля</p>
-            <button>Подробнее</button>
-          </div>
-          <div class="slider-text">
-            <h1>Комментарии, отзывы, наполнение форумов</h1>
-            <p>Фиксированные тарифы от 1 рубля</p>
-            <button>Подробнее</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous">
-    </script>
-    
-    <link rel="stylesheet" href="slick/slick-theme.css">
-    <link rel="stylesheet" href="slick/slick.css">
-    <script src="slick/slick.min.js"></script>
-    
-    
-    
+     <h1>Угадай число и получи промо-код на супер скидку <br> и введите его в появившимся окне</h1>
+    <div class="game">
+      <p class="p-text">Введите число от 1 до 150: <input type="text" id="inp"></p>
+      <button id="btn">Угадать</button>
+      <p id="result">Результат: <span id="out"></span></p>
+    </div>
   </body>
 </html>
