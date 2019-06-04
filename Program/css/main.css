@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #272727;
+  font-size: 25px;
+}
+.game {
+  text-align: center;
+  margin-top: 150px;
+}
+p {
+  color: #2ca368;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-left: 10px;
+  outline: none;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  margin-top: 70px;
+  cursor: pointer;
+  background: #eabf0c;
+  color: #2f2f2f;
+  outline: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-bottom: 100px;
+}
+button:hover {
+  background: #c4b60f;
+}
+span {
+  color: #4134a7;
+}
+.block {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background: rgba(0,0,0,.2);
+  transition: opacity 0.4s ease-in-out;
+}
+.block-color {
+  background: #fff;
+  border-radius: 5px;
+}
+.content {
+  padding: 20px;
+  text-align: left;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+.content button {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.content input {
+  float: right;
+}
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: -5rem;
+  right: -2rem;
+  color: #fff;
+  cursor: pointer;
+}
