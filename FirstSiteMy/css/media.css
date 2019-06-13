@@ -29,7 +29,10 @@
 }
 @media screen and (max-width: 769px) {
   .card__item {
-    grid-template-columns: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .btn-block .btn {
     width: 270px;
