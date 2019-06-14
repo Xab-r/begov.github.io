@@ -45,16 +45,16 @@
     width: 215px;
   }
   .prev {
-    left: 0.2rem;
+    left: 0.5rem;
   }
   .next {
-    right: 0.2rem;
+    right: 0.5rem;
   }
 }
 @media screen and (max-width: 499px) {
   header {
     width: 100%;
-    min-height: 700px;
+    min-height: 630px;
   }
   .headhesive {
     height: 70px;
@@ -163,14 +163,20 @@
     line-height: 30px;
     font-size: 14px;
   }
+  .slider-block .slider-card {
+    width: 190px;
+  }
+  .slider-block .slider-card img {
+    width: 50px;
+  }
   .slider-block .slider-card h3 {
-    font-size: 16px;
+    font-size: 15px;
   }
   .slider-block .slider-card p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .arrow {
-    font-size: 20px;
+    font-size: 16px;
   }
   .headhesive {
     height: 40px;

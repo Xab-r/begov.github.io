@@ -1,3 +1,8 @@
+window.onload = function(){
+  var proloader = document.getElementById('proloader');
+  proloader.style.display = 'none';
+}
+
 var header =  new  Headhesive ( ' .heading ' );
 $('.slider').slick({
     infinite: true,
