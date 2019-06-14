@@ -8,13 +8,19 @@ body {
   font-family: 'PT Serif', serif;
 }
 .proloader {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
   background: #fff;
+  transition: all 1s;
+  z-index: 999;
+}
+.hidd {
+  opacity: 0;
+  visibility: hidden;
 }
 .windows8 {
   position: relative;
@@ -374,6 +380,9 @@ header {
 .heading .logo {
   cursor: pointer;
 }
+.heading .bars {
+  margin-top: 5px;
+}
 .headhesive {
   background: #061e37;
   width: 100%;
@@ -388,9 +397,14 @@ header {
   transform: translateY(0%);
 }
 .bars {
-  color: #fff;
   font-size: 30px;
   cursor: pointer;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+}
+.bars img {
+  color: #fff;
 }
 .title {
   text-align: center;
@@ -485,7 +499,7 @@ header {
   text-transform: uppercase;
   color: #fff;
 }
-.btn-block .btn i {
+.btn-block .btn span {
   margin-right: 10px;
 }
 .btn-block .btn-1 {
