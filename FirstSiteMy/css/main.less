@@ -1,21 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
     outline: none;
+    padding: 0;
 }
 body {
-    font-family: 'PT Serif', serif;
+    font-family: 'Istok Web', sans-serif;
 }
 .proloader {
-    position: fixed;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     background: #fff;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
     transition: all 1s;
+    width: 100%;
     z-index: 999;
 }
 .hidd {
@@ -23,77 +23,49 @@ body {
     visibility: hidden;
 }
 .windows8 {
-	position: relative;
-	width: 78px;
 	height:78px;
 	margin:auto;
+	position: relative;
+	width: 78px;
 }
 
 .windows8 .wBall {
-	position: absolute;
-	width: 74px;
+	animation: orbit 6.96s infinite;
 	height: 74px;
 	opacity: 0;
+	position: absolute;
 	transform: rotate(225deg);
-		-o-transform: rotate(225deg);
-		-ms-transform: rotate(225deg);
-		-webkit-transform: rotate(225deg);
-		-moz-transform: rotate(225deg);
-	animation: orbit 6.96s infinite;
-		-o-animation: orbit 6.96s infinite;
-		-ms-animation: orbit 6.96s infinite;
-		-webkit-animation: orbit 6.96s infinite;
-		-moz-animation: orbit 6.96s infinite;
+	width: 74px;
 }
 
 .windows8 .wBall .wInnerBall{
-	position: absolute;
-	width: 10px;
-	height: 10px;
 	background: rgb(0,0,0);
-	left:0px;
-	top:0px;
 	border-radius: 10px;
+	height: 10px;
+	left:0px;
+	position: absolute;
+	top:0px;
+	width: 10px;
 }
 
 .windows8 #wBall_1 {
 	animation-delay: 1.52s;
-		-o-animation-delay: 1.52s;
-		-ms-animation-delay: 1.52s;
-		-webkit-animation-delay: 1.52s;
-		-moz-animation-delay: 1.52s;
 }
 
 .windows8 #wBall_2 {
 	animation-delay: 0.3s;
-		-o-animation-delay: 0.3s;
-		-ms-animation-delay: 0.3s;
-		-webkit-animation-delay: 0.3s;
-		-moz-animation-delay: 0.3s;
 }
 
 .windows8 #wBall_3 {
 	animation-delay: 0.61s;
-		-o-animation-delay: 0.61s;
-		-ms-animation-delay: 0.61s;
-		-webkit-animation-delay: 0.61s;
-		-moz-animation-delay: 0.61s;
 }
 
 .windows8 #wBall_4 {
 	animation-delay: 0.91s;
-		-o-animation-delay: 0.91s;
-		-ms-animation-delay: 0.91s;
-		-webkit-animation-delay: 0.91s;
-		-moz-animation-delay: 0.91s;
 }
 
 .windows8 #wBall_5 {
 	animation-delay: 1.22s;
-		-o-animation-delay: 1.22s;
-		-ms-animation-delay: 1.22s;
-		-webkit-animation-delay: 1.22s;
-		-moz-animation-delay: 1.22s;
 }
 
 
@@ -371,23 +343,23 @@ a {
     text-decoration: none;
 }
 #block-menu {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
     background: #061e37;
-    z-index: 99;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: fixed;
     transform: translateX(-200%);
     transition: 0.5s;
+    width: 100%;
+    z-index: 99;
     #close {
         color: #fff;
-        font-size: 30px;
         cursor: pointer;
+        font-size: 30px;
         position: absolute;
-        top: 2rem;
         right: 2rem;
+        top: 2rem;
     }
     ul {
         list-style: none;
@@ -396,10 +368,10 @@ a {
         li {
             margin: 20px 0;
             a {
+                border-bottom: 2px solid transparent;
                 color: #fff;
                 font-size: 25px;
                 padding-bottom: 5px;
-                border-bottom: 2px solid transparent;
                 transition: 0.5s ease-in-out;
                 &:hover {
                     border-bottom: 2px solid #fff;
@@ -408,58 +380,100 @@ a {
         }
     }
 }
+.about-us {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,.5);
+    z-index: 333;
+    .block-bg {
+        background: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .about-us__content {
+            padding: 10px;
+            max-width: 650px;
+            min-width: 150px;
+            max-height: 900px;
+            overflow: scroll;
+            margin: 0 auto;
+            text-align: center;
+            h1 {
+                text-transform: uppercase;
+                margin: 15px 0;
+            }
+            p {
+                font-size: 20px;
+                margin: 15px 0;
+            }
+            .bold-p {
+                font-weight: bold;
+            }
+            .icon-times-circle {
+                position: absolute;
+                top: -1.5rem;
+                right: -1.5rem;
+                font-size: 25px;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
 header {
     background: url(../img/bg.jpg) no-repeat center top / cover;
+    color: #fff;
     height: 100vh;
     width: 100%;
-    color: #fff;
 }
 .container {
-    width: 75%;
     margin: 0 auto;
+    width: 75%;
 }
 .heading {
-    width: 75%;
-    height: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75%;
     .logo {
         cursor: pointer;
     }
     .bars {
-        margin-top: 5px;
+        margin-top: 14px;
     }
 }
 .headhesive {
     background: #061e37;
-    width: 100%;
     height: 70px;
     padding: 0 100px;
     position: fixed;
     transform: translateY(-100%);
-    z-index: 2;
     transition: 0.5s ease-in-out;
+    width: 100%;
+    z-index: 2;
 }
 .headhesive--stick {
     transform: translateY(0%);
 }
 .bars {
     color: #fff;
-    font-size: 30px;
     cursor: pointer;
+    font-size: 30px;
     height: 50px;
     width: 50px;
-    color: #fff;
     img {
         color: #fff;
     }
 }
 .title {
+    margin-top: 10rem;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 10rem;
     h1 {
         font-size: 45px;
     }
@@ -468,15 +482,15 @@ header {
         margin: 30px 0 45px 0;
     }
     button{
-        padding: 20px 30px;
-        font-size: 15px;
-        text-transform: uppercase;
-        border: none;
         border-radius: 5px;
+        border: none;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
         cursor: pointer;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding: 20px 30px;
+        text-transform: uppercase;
         transition: background 0.4s ease;
-        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
     }
     .btn-dark {
         background: #061e37;
@@ -496,8 +510,8 @@ header {
     }
 }
 .titles {
-    text-align: center;
     padding: 100px 0;
+    text-align: center;
     h1 {
         color: #061e37;
         font-size: 45px;
@@ -509,15 +523,15 @@ header {
     }
 }
 .container-block {
-    width: 70%;
     margin: 0 auto;
+    width: 70%;
 }
 .slider {
     margin-bottom: 170px;
     &-card {
-        width: 315px;
-        text-align: center;
         margin: 0 auto;
+        text-align: center;
+        width: 315px;
         h3 {
             color: #061e37;
             font-size: 20px;
@@ -537,46 +551,58 @@ header {
     display: flex;
     margin: 0 auto;
     .btn {
-        width: 370px;
-        height: 70px;
-        background: #ccc;
-        margin: 1px;
-        cursor: pointer;
-        text-align: center;
-        line-height: 70px;
-        font-size: 20px;
-        text-transform: uppercase;
         color: #fff;
+        cursor: pointer;
+        font-size: 20px;
+        height: 70px;
+        line-height: 70px;
+        margin: 1px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: background 0.5s;
+        width: 370px;
         span {
             margin-right: 10px;
         }
     }
     .btn-1 {
         background: #80d8ff;
+        &:hover {
+            background: #6fd1fb;
+        }
     }
     .btn-2 {
         background: #82b1ff;
+        &:hover {
+            background: rgb(83, 197, 246);
+        }
     }
     .btn-3 {
         background: #b388ff;
+        &:hover {
+            background: #9a62fb;
+        }
     }
     .btn-4 {
         background: #ea80fc;
+        &:hover {
+            background: #e45ffb;
+        }
     }
 }
 .card__item {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
+    margin: 0 auto;
     .cards {
-        width: 320px;
-        height: 410px;
-        margin: 20px auto;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 410px;
+        justify-content: center;
+        margin: 20px auto;
+        text-align: center;
+        width: 320px;
         h4 {
             color: #041527;
             font-size: 25px;
@@ -587,18 +613,18 @@ header {
             line-height: 45px;
         }
         a {
-            display: block;
-            padding: 15px 0;
-            width: 170px;
-            margin: 0 auto;
-            color: #000;
-            margin-top: 20px;
-            font-size: 15px;
-            text-transform: uppercase;
             border-radius: 5px;
-            font-family: Arial, Helvetica, sans-serif;
-            transition: background 0.4s ease;
             box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+            color: #000;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            margin-top: 20px;
+            margin: 0 auto;
+            padding: 15px 0;
+            text-transform: uppercase;
+            transition: background 0.4s ease;
+            width: 170px;
         }
     } 
     .cards1 {
@@ -644,21 +670,21 @@ header {
 }
 footer {
     background: #061e37;
+    color: #fff;
     height: 200px;
     margin-top: 100px;
-    color: #fff;
     padding: 35px 0;
     .menu {
-        height: 100%;
         display: flex;
         flex-direction: column;
+        height: 100%;
         justify-content: space-around;
         .footer-text p{
             text-align: center;
         }
-        .social-icon i{
-            margin: 0 10px;
+        .social-icon span{
             cursor: pointer;
+            margin: 0 10px;
         }
     }
     .footer-menu {
@@ -667,10 +693,10 @@ footer {
     }
 }
 .arrow {
-    border: none;
     background: transparent;
-    font-size: 25px;
+    border: none;
     cursor: pointer;
+    font-size: 25px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
