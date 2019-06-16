@@ -86,6 +86,9 @@
   .titles p {
     font-size: 15px;
   }
+  .about-us .block-bg {
+    height: 90vh;
+  }
   .about-us .block-bg .about-us__content h1 {
     font-size: 16px;
   }
